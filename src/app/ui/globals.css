@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+input {
+  background: rgb(241 245 249 / var(--tw-bg-opacity));
+  outline: none;
+  width: 100%;
+  font-size: x-large;
+  transition: padding 0.3s 0.2s ease;
+
+  &:focus {
+    padding-bottom: 5px;
+  }
+
+  &:focus + .line {
+    &:after {
+      transform: scaleX(1);
+    }
+  }
+}
+
+.form-text-input {
+  .line {
+    width: 100%;
+    height: 1px;
+    background: black;
+    position: relative;
+  
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      transform: scalex(0);
+      transition: transform 0.3s ease;
+      background: black;
+    }
+  }
+}
+
+.mission-container {
+  mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+}
+
+.mission-line {
+  animation: infiniteScroll 30s linear infinite;
+}
+
+.mission-line--delay {
+  animation: infiniteScroll 30s linear infinite;
+  animation-delay: calc(-30s);
+}
+
+.mission-line--reverse {
+  animation: infiniteScroll 30s linear infinite;
+  animation-direction: reverse;
+}
+
+.mission-line--reverse--delay {
+  animation: infiniteScroll 30s linear infinite;
+  animation-delay: calc(-30s);
+  animation-direction: reverse;
+}
+
+.styled-list ul {
+  list-style: disc;
+  padding: 0 2rem;
+}
+
+@keyframes infiniteScroll {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}

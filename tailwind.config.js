@@ -7,12 +7,21 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        "studiohaus-orange": "#FF9057"
       },
-    },
+      gridTemplateColumns: {
+        "3/2": "3fr 2fr",
+        "2/3": "2fr 3fr",
+        "3/1/3": "3fr 1fr 3fr"
+      },
+      aspectRatio: {
+        "5/6": "5 / 6"
+      },
+      fontSize: {
+        "superxl": ["10rem", "0.9"]
+      }
+    }
   },
   plugins: [],
 };

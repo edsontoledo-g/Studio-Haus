@@ -1,0 +1,13 @@
+.primaryButton {
+  padding: 0.5rem 1.5rem;
+  color: rgb(var(--background-rgb));
+  background: rgb(var(--foreground-rgb));
+  border-radius: 2rem;
+  font-size: large;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.primaryButton:hover {
+  background: rgb(50, 50, 50);
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
