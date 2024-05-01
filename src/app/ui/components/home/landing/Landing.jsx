@@ -12,7 +12,7 @@ export default function Landing() {
             <div className="border-b-2 border-black my-8"></div>
             <div className="flex">
               <Link href="#projects" className={styles.primaryButton}>Explorar</Link>
-              <Link href="https://bit.ly/3TdzuDO">
+              <Link href="https://bit.ly/49wC0eK">
                 <Image
                   src="/icons/whatsapp-icon.svg"
                   alt=""
