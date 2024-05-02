@@ -26,7 +26,7 @@ export default function ProjectImageGallery({ images, reverse=false }) {
               src={`http:${image.fields.file.url}`}
               width={500}
               height={500}
-              className="w-full h-full aspect-square object-cover border-black border-2 transition-transform hover:[transform:scale(1.075)]"
+              className="w-full h-full object-contain sm:object-cover border-black border-2 transition-transform hover:[transform:scale(1.075)]"
               onMouseEnter={() => { onMouseEnterHandler(image); }}
             />
           );
