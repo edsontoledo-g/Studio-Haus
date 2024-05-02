@@ -9,15 +9,15 @@ export default function ProjectImageGallery({ images, reverse=false }) {
     setSelectedImage(image);
   };
   return(
-    <div className={`gap-4 flex ${ reverse ? " flex-row-reverse" : ""}`}>
+    <div className={`gap-4 flex flex-col sm:flex-row ${ reverse ? "flex-col-reverse sm:flex-row-reverse" : ""}`}>
       <Image 
         alt="Project image"
         src={`http:${selectedImage.fields.file.url}`}
         width={1000}
         height={1000}
-        className="w-[70%] aspect-square object-cover border-black border-2"
+        className="w-full sm:w-[70%] aspect-square object-cover border-black border-2"
       />
-      <div className="grid grid-rows-4 gap-4 grid-flow-col">
+      <div className="grid grid-cols-2 gap-4 grid-flow-row">
         {images.map((image) => {
           return (
             <Image 

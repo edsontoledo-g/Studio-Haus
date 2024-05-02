@@ -5,6 +5,10 @@ const nextConfig = {
             {
                 protocol: "http",
                 hostname: "images.ctfassets.net"
+            },
+            {
+                protocol: "http",
+                hostname: "downloads.ctfassets.net"
             }
         ]
     },
