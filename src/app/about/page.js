@@ -29,7 +29,7 @@ export default async function About() {
           <div className=" absolute h-4 w-96 bg-studiohaus-orange bottom-0 left-[-8rem]"></div>
         </div>
       </div>
-      <div className="px-8 mt-16 max-w-7xl mx-auto">{documentToReactComponents(about.fields.description, options)}</div>
+      <div className="px-8 mt-16 max-w-7xl mx-auto text-xl">{documentToReactComponents(about.fields.description, options)}</div>
     </div>
   );
 }

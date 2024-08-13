@@ -11,24 +11,16 @@ export default function ContactForm() {
       email: formData.get("email"),
       phone: formData.get("phone"),
       message: formData.get("message")
-    }
-    
-    const response = await fetch("/api/send", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(data)
-    });
-
-    if (response.status == 200) {
-      console.log("Yey");
-    }
+    };
+    const subject = `${data.name}: ${data.phone}`;
+    const mailtoLink = `mailto:${data.email}?subject=${subject}&body=${data.message}`;
+    window.location.href = mailtoLink;
+    document.getElementById("contact-form").reset();
   }
 
   return (
     <div className="flex items-center border-black border-2 p-8 md:border-r-0 xl:border-r-2">
-      <form className="w-full" onSubmit={onSubmitHandler}>
+      <form id="contact-form" className="w-full" onSubmit={onSubmitHandler}>
         <div className="form-text-input mb-4">
           <input type="text" name="name" placeholder="Nombre completo"/>
           <div className="line"></div>
