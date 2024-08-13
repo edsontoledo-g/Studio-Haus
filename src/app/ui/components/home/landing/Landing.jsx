@@ -61,8 +61,8 @@ export default function Landing() {
           <Image 
             src="/assets/landing-2.jpg"
             alt="Landing page image"
-            width={250}
-            height={120}
+            width={225}
+            height={110}
             className="absolute left-0 bottom-0 border-y-2 border-r-2 border-black xl:border-l-2 hidden md:block"
           />
         </div>
