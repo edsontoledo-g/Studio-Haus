@@ -13,7 +13,7 @@ export default function ContactForm() {
       message: formData.get("message")
     };
     const subject = `${data.name}: ${data.phone}`;
-    const mailtoLink = `mailto:${data.email}?subject=${subject}&body=${data.message}`;
+    const mailtoLink = `mailto:edson.toledo@studiohaus.com.mx?subject=${subject}&body=${data.message}`;
     window.location.href = mailtoLink;
     document.getElementById("contact-form").reset();
   }

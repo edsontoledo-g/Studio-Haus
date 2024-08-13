@@ -43,7 +43,7 @@ export default function Landing() {
             <div className="pt-16 grid grid-cols-2 gap-4 sm:gap-8">
               <div>
                 <h6 className="text-xl font-bold mb-2">Calidad y diseño</h6>
-                <p>Diseño creativo y funcional de proyectos residenciales y comerciales en la ciudad de Querétaro.</p>
+                <p>Diseño creativo y funcional de proyectos residenciales y comerciales.</p>
               </div>
               <div>
                 <h6 className="text-xl font-bold mb-2">Comunicando arte a través de la arquitectura</h6>
