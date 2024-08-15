@@ -43,7 +43,7 @@ export default function Landing() {
             <div className="pt-16 grid grid-cols-2 gap-4 sm:gap-8">
               <div>
                 <h6 className="text-xl font-bold mb-2">Calidad y diseño</h6>
-                <p>Diseño creativo y funcional de proyectos residenciales y comerciales.</p>
+                <p>Diseño creativo y funcional de proyectos residenciales y comerciales en la ciudad de Querétaro.</p>
               </div>
               <div>
                 <h6 className="text-xl font-bold mb-2">Comunicando arte a través de la arquitectura</h6>
@@ -57,13 +57,6 @@ export default function Landing() {
             width={375}
             height={120}
             className="absolute right-0 border-y-2 border-l-2 border-black xl:border-r-2 hidden lg:block"
-          />
-          <Image 
-            src="/assets/landing-2.jpg"
-            alt="Landing page image"
-            width={225}
-            height={110}
-            className="absolute left-0 bottom-0 border-y-2 border-r-2 border-black xl:border-l-2 hidden md:block"
           />
         </div>
       </div>
