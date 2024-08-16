@@ -6,12 +6,13 @@ import Mission from "./ui/components/home/mission/Mission";
 import ContactUs from "@/app/ui/components/home/contact/ContactUs";
 
 export default async function Home() {
-  const outstandingProjects = await getOutstandingProjects();
+  const services = await getContent("service");
+  const outstandingProjects = await getContent("outstandingProject");
   
   return (
     <main className="max-w-7xl mx-auto">
       <Landing/>
-      <Services />
+      <Services services={services} />
       <OutstandingProjects outstandingProjects={outstandingProjects}/>
       <Mission/>
       <ContactUs/>
@@ -19,11 +20,11 @@ export default async function Home() {
   );
 }
 
-async function getOutstandingProjects() {
+async function getContent(contentType) {
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
   });
-  const res = await client.getEntries({ content_type: "outstandingProject", limit: 3 });
+  const res = await client.getEntries({ content_type: contentType, limit: 3 });
   return res.items;
 }
