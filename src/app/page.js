@@ -1,5 +1,6 @@
 import { createClient } from "contentful";
 import Landing from "@/app/ui/components/home/landing/Landing";
+import Services from "./ui/components/home/services/Services";
 import OutstandingProjects from "./ui/components/home/outstabdingprojects/OutstandingProjects";
 import Mission from "./ui/components/home/mission/Mission";
 import ContactUs from "@/app/ui/components/home/contact/ContactUs";
@@ -10,6 +11,7 @@ export default async function Home() {
   return (
     <main className="max-w-7xl mx-auto">
       <Landing/>
+      <Services />
       <OutstandingProjects outstandingProjects={outstandingProjects}/>
       <Mission/>
       <ContactUs/>
