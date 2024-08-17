@@ -11,7 +11,7 @@ export default function Landing() {
             <h1 className="font-medium text-7xl sm:text-8xl">Pasión por la <span className="flex flex-col sm:flex-row sm:items-center">calidad<span className="font-normal text-base pl-8 text-center sm:text-left">Transformamos tus sueños en realidad con las soluciones arquitectónicas mas singulares.</span></span></h1>
             <div className="border-b-2 border-black my-8"></div>
             <div className="flex">
-              <Link href="#projects" className={styles.primaryButton}>Explorar</Link>
+              <Link href="#services" className={styles.primaryButton}>Explorar</Link>
               <Link href="https://bit.ly/49wC0eK">
                 <Image
                   src="/icons/whatsapp-icon.svg"
