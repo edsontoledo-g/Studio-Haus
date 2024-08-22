@@ -31,7 +31,7 @@ export default function Navbar() {
 
   return (
     <nav className={`fixed top-0 w-full border-b-2 border-black h-32 flex backdrop-blur-md items-center bg-opacity-50 transition-transform bg-white z-50 ${showNavbar ? "" : " -translate-y-full"}`}>
-      <div className="grid h-full text-center grid-cols-[2fr,1fr,1fr]">
+      <div className="grid h-full text-center grid-cols-[2fr,1fr,1fr,1fr]">
         <Link href="/" className="flex items-center px-4 sm:px-8">
           <Image 
             src="/assets/logo.svg"
@@ -45,6 +45,9 @@ export default function Navbar() {
         </Link>
         <Link href="/faq" className={`text-lg font-bold flex items-center justify-center hover:bg-black hover:text-white px-2 sm:text-xl ${pathname == "/faq" ? "bg-black text-white" : ""}`}>
           FAQs
+        </Link>
+        <Link href="/magnethaus"className={`text-lg leading-5 font-bold flex items-center justify-center hover:bg-black hover:text-white px-2 sm:text-xl ${pathname == "/magnethaus" ? "bg-black text-white" : ""}`}>
+          Magnet Haus
         </Link>
       </div>
     </nav>

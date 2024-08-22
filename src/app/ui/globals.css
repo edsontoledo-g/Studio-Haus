@@ -85,11 +85,31 @@ input {
   padding: 0 2rem;
 }
 
+.animated-text {
+  border-right: 2px solid aqua;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(40), cursor .4s step-end infinite alternate;
+}
+
 @keyframes infiniteScroll {
-  0%{
+  0% {
     transform: translateX(100%);
   }
-  100%{
+  100% {
     transform: translateX(-100%);
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
   }
 }

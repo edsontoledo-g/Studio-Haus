@@ -20,6 +20,9 @@ module.exports = {
       },
       fontSize: {
         "superxl": ["10rem", "0.9"]
+      },
+      backgroundImage: {
+        "magnethaus-bg": "url('/assets/magnethaus.jpg')"
       }
     }
   },
