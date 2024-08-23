@@ -1,6 +1,11 @@
 import Link from "next/link";
 import styles from "@/app/ui/styles.module.css";
 
+export const metadata = {
+  title: "Magnet Haus",
+  description: "Magnet Haus es un provedor de materiales de construcción de alta calidad.",
+ }
+
 export default function MagnetHaus() {
   return (
     <div className="h-screen bg-magnethaus-bg bg-cover bg-center">
